@@ -32,10 +32,12 @@
             ];
         };
 
-        # Import the modules you want in your own Home Manager config
         homeModules = import ./modules;
     in {
-        #  For building / testing individual home modules
+        # Import the modules you want in your own Home Manager config
+        inherit homeModules;
+
+        # For building / testing individual home modules
         legacyPackages.homeConfigurations = builtins.mapAttrs (name: module:
             home-manager.lib.homeManagerConfiguration {
                 inherit pkgs;
