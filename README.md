@@ -1,4 +1,4 @@
-My reusable Home Manager modules.
+My collection of personal Home Manager modules
 
 ## Development / Testing
 * Create the 'builder' user
