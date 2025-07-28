@@ -1,12 +1,14 @@
 { config, lib, pkgs, ... }:
 
+with lib;
+
 {
     imports = [
         ./workspaces.nix
         ./music.nix
     ];
     
-    options.ethorbit.home-manager.i3 = with lib; {
+    options.ethorbit.home-manager.i3 = {
         keys = {
             mod = mkOption {
                 type = types.str;
@@ -166,6 +168,13 @@
                 #### Scratchpad ####
                 bindsym --release $alt+h move scratchpad
                 bindsym --release $alt+Tab scratchpad show
+                
+                # Dumb fix for Polybar: Disabling module "i3" reason: Could not find i3 socket: i3 --get-socketpath failed with exit code 1 and output
+                ${
+                    if config.services.polybar.enable then
+                        "exec systemctl --user restart polybar"
+                    else ""
+                }
 
                 #### Set default program workspaces ####
                   # Terminal
