@@ -1,14 +1,13 @@
 { config, lib, pkgs, ... }:
 
-with lib;
-
 {
     imports = [
+        ./polybar.nix
         ./workspaces.nix
         ./music.nix
     ];
     
-    options.ethorbit.home-manager.i3 = {
+    options.ethorbit.home-manager.i3 = with lib; {
         keys = {
             mod = mkOption {
                 type = types.str;
@@ -29,7 +28,7 @@ with lib;
         };
 
         scripts = {
-            lock = lib.mkOption {
+            lock = mkOption {
                 type = types.package;
                 default = (pkgs.writeShellScript "script" ''
                     ${pkgs.i3lock-fancy-rapid}/bin/i3lock-fancy-rapid 10 20
@@ -53,6 +52,7 @@ with lib;
                 #
                 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+                include $HOME/.config/i3/polybar
                 include $HOME/.config/i3/workspaces/*
                 include $HOME/.config/i3/music
                 include $HOME/.config/i3/config_system # Put your system-dependent i3 configuration in there.
@@ -169,13 +169,6 @@ with lib;
                 bindsym --release $alt+h move scratchpad
                 bindsym --release $alt+Tab scratchpad show
                 
-                # Dumb fix for Polybar: Disabling module "i3" reason: Could not find i3 socket: i3 --get-socketpath failed with exit code 1 and output
-                ${
-                    if config.services.polybar.enable then
-                        "exec systemctl --user restart polybar"
-                    else ""
-                }
-
                 #### Set default program workspaces ####
                   # Terminal
                 exec --no-startup-id kitty
