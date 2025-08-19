@@ -3,6 +3,7 @@
     htop = ./htop;
     i3 = ./i3;
     neovim = ./neovim;
+    polybar = ./polybar;
     rofi = ./rofi;
     shell = ./shell;
 }
