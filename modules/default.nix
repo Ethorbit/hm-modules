@@ -7,4 +7,5 @@
     rofi = ./rofi;
     shell = ./shell;
     xdg = ./xdg;
+    xfconf = ./xfconf;
 }
