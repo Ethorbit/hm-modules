@@ -6,4 +6,5 @@
     polybar = ./polybar;
     rofi = ./rofi;
     shell = ./shell;
+    xdg = ./xdg;
 }
