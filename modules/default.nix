@@ -9,7 +9,7 @@
 
     i3 = ./i3;
 
-    mocp = ./mocp;
+    moc = ./moc;
 
     neovim = ./neovim;
 
