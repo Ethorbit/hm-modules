@@ -9,6 +9,8 @@
 
     i3 = ./i3;
 
+    mocp = ./mocp;
+
     neovim = ./neovim;
 
     polybar = ./polybar;
