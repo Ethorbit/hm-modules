@@ -5,6 +5,8 @@
 
     feh = ./feh;
 
+    firefox = ./firefox;
+
     flameshot = ./flameshot;
 
     htop = ./htop;
