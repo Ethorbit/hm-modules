@@ -9,6 +9,8 @@
 
     flameshot = ./flameshot;
 
+    git = ./git;
+
     gtk = ./gtk;
     qt = ./qt;
 
