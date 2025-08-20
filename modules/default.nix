@@ -1,6 +1,8 @@
 {
     dconf = ./dconf;
 
+    dunst = ./dunst;
+
     feh = ./feh;
 
     flameshot = ./flameshot;
@@ -13,6 +15,9 @@
 
     neovim = ./neovim;
 
+    easyeffects = ./easyeffects;
+    pulseeffects = ./pulseeffects;
+
     polybar = ./polybar;
 
     picom = ./picom;
@@ -24,7 +29,4 @@
     xdg = ./xdg;
 
     xfconf = ./xfconf;
-
-    easyeffects = ./easyeffects;
-    pulseeffects = ./pulseeffects;
 }
