@@ -1,5 +1,6 @@
 {
     dconf = ./dconf;
+    feh = ./feh;
     htop = ./htop;
     i3 = ./i3;
     neovim = ./neovim;
