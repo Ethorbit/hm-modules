@@ -10,10 +10,13 @@
     flameshot = ./flameshot;
 
     gtk = ./gtk;
+    qt = ./qt;
 
     htop = ./htop;
 
     i3 = ./i3;
+
+    imwheel = ./imwheel;
 
     moc = ./moc;
 
@@ -27,8 +30,6 @@
     pipewire = ./pipewire;
 
     picom = ./picom;
-
-    qt = ./qt;
 
     rofi = ./rofi;
 
