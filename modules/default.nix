@@ -18,6 +18,8 @@
 
     imwheel = ./imwheel;
 
+    kitty = ./kitty;
+
     moc = ./moc;
 
     neovim = ./neovim;
