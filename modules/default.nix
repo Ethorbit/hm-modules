@@ -33,6 +33,8 @@
 
     picom = ./picom;
 
+    ranger = ./ranger;
+
     rofi = ./rofi;
 
     shell = ./shell;
