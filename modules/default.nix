@@ -28,6 +28,8 @@
 
     picom = ./picom;
 
+    qt = ./qt;
+
     rofi = ./rofi;
 
     shell = ./shell;
