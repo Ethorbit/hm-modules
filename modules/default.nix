@@ -9,6 +9,8 @@
 
     flameshot = ./flameshot;
 
+    gtk = ./gtk;
+
     htop = ./htop;
 
     i3 = ./i3;
