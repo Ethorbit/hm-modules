@@ -22,6 +22,8 @@
 
     polybar = ./polybar;
 
+    pipewire = ./pipewire;
+
     picom = ./picom;
 
     rofi = ./rofi;
