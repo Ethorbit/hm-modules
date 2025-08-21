@@ -44,13 +44,13 @@
                 modules = [
                     module
                     # Minimal stuff needed for development and tests
+                    (import modules/default)
                     (import modules/shell)
                     (import modules/neovim)
                     {
                         home = {
                             username = "builder";
                             homeDirectory = "/home/builder";
-                            stateVersion = "24.11";
                         };
                     }
                 ];

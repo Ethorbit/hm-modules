@@ -3,6 +3,8 @@
         ./wallpapers
     ];
 
+    default = ./default;
+
     dconf = ./dconf;
 
     dunst = ./dunst;
