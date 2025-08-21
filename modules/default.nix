@@ -1,4 +1,8 @@
 {
+    imports = [
+        ./wallpapers
+    ];
+
     dconf = ./dconf;
 
     dunst = ./dunst;
@@ -40,6 +44,8 @@
     rofi = ./rofi;
 
     shell = ./shell;
+
+    wallpapers = ./wallpapers;
 
     xdg = ./xdg;
 
