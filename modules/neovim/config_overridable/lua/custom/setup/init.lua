@@ -1,1 +1,1 @@
-require("custom/setup/avante")
+require("custom/setup/codecompanion")

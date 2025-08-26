@@ -30,7 +30,7 @@ in
         # You can override any of these in your own configs:
         ".config/nvim/lua/custom/init.lua".source = mkDefault ./config_overridable/lua/custom/init.lua;
         ".config/nvim/lua/custom/setup/init.lua".source = mkDefault ./config_overridable/lua/custom/setup/init.lua;
-        ".config/nvim/lua/custom/setup/avante.lua".source = mkDefault ./config_overridable/lua/custom/setup/avante.lua;
+        ".config/nvim/lua/custom/setup/codecompanion.lua".source = mkDefault ./config_overridable/lua/custom/setup/codecompanion.lua;
     };
 
     # home.file.".config/nvim/lua/nix.lua".text = ''
