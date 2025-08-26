@@ -27,8 +27,10 @@ in
             recursive = true;
         };
 
-        # Override these in your custom system configs:
-        ".config/nvim/lua/custom/init.lua".text = mkDefault "";
+        # You can override any of these in your own configs:
+        ".config/nvim/lua/custom/init.lua".source = ./config_overridable/lua/custom/init.lua;
+        ".config/nvim/lua/custom/setup/init.lua".source = ./config_overridable/lua/custom/setup/init.lua;
+        ".config/nvim/lua/custom/setup/avante.lua".source = ./config_overridable/lua/custom/setup/avante.lua;
     };
 
     # home.file.".config/nvim/lua/nix.lua".text = ''

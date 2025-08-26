@@ -46,6 +46,8 @@
             nvim-neoclip-lua
             
             nui-nvim
+
+            avante-nvim
         ];
     };
 }
