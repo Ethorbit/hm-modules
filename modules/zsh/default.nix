@@ -47,7 +47,10 @@
                 expireDuplicatesFirst = true;
             };
             autocd = true;
-            initExtra = ''
+            # Deprecation of initExtra still shows.
+            # Nothing I can do, devs of the options I use need to edit their stuff
+            # as they're still using initExtra
+            initContent = ''
                 prompt_color=${config.ethorbit.home-manager.zsh.prompt.colors.prompt}
                 name_color=${config.ethorbit.home-manager.zsh.prompt.colors.name}
                 dir_color=${config.ethorbit.home-manager.zsh.prompt.colors.directory}
