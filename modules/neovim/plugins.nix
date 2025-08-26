@@ -46,12 +46,6 @@
             nvim-neoclip-lua
             
             nui-nvim
-
-            # AI cause 2025
-            avante-nvim
-            # avante deps
-            plenary-nvim
-            nui-nvim
         ];
     };
 }

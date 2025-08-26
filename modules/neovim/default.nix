@@ -1,4 +1,4 @@
-{ config, ... }:
+{ lib, ... }:
 
 let
     shellVars = ''
@@ -21,9 +21,14 @@ in
         vimdiffAlias = true;
     };
 
-    home.file.".config/nvim" = {
-        source = ./config;
-        recursive = true;
+    home.file = with lib; {
+        ".config/nvim" = {
+            source = ./config;
+            recursive = true;
+        };
+
+        # Override these in your custom system configs:
+        ".config/nvim/lua/custom/init.lua".text = mkDefault "";
     };
 
     # home.file.".config/nvim/lua/nix.lua".text = ''

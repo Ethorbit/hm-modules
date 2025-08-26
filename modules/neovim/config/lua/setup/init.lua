@@ -8,5 +8,3 @@ require("setup/lsp")
 
 require("lualine").setup()
 --require("chatgpt").setup()
-
-require("avante").setup()
