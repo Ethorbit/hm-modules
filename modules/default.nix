@@ -28,6 +28,8 @@
 
     kitty = ./kitty;
 
+    kwallet = ./kwallet;
+
     moc = ./moc;
 
     neovim = ./neovim;
