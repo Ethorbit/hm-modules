@@ -8,6 +8,13 @@ let g:ranger_replace_netrw = 1
 let g:transparent_enabled = 1
 ]]
 
+-- 08/29/25 fix for messages not showing anymore after I updated neovim
+-- https://github.com/neovim/neovim/issues/33073
+vim.diagnostic.config({
+    virtual_lines = true,
+    --virtual_text = true,
+})
+
 ranger_replace_netrw = 1
 
 options.nvim = {
