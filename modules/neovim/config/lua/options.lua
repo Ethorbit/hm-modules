@@ -12,7 +12,7 @@ let g:transparent_enabled = 1
 -- https://github.com/neovim/neovim/issues/33073
 vim.diagnostic.config({
     virtual_text = true,
-    --virtual_lines = true,
+    virtual_lines = false,
 })
 
 ranger_replace_netrw = 1
