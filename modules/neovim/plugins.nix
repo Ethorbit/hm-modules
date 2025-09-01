@@ -40,7 +40,7 @@
             vim-svelte
 
             indent-blankline-nvim
-            
+
             plenary-nvim
             telescope-nvim
             nvim-neoclip-lua

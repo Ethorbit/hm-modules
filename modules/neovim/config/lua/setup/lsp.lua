@@ -9,6 +9,7 @@ local function add(name, config)
     lspconfig[name].setup(config or {})
 end
 
+-- https://mason-registry.dev/registry/list
 add("nil_ls")
 
 add("eslint", {
@@ -36,9 +37,10 @@ add("pylsp", {
         pyls_isort = { enabled = true },
     }
 })
+add("yamlls")
+add("docker_compose_language_service")
 add("intelephense")
 add("dockerls")
-add("docker_compose_language_service")
 add("csharp_ls")
 add("qmlls")
 add("gdscript")
