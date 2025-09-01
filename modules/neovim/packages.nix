@@ -7,10 +7,8 @@ with pkgs;
         ranger
         ripgrep
         trash-cli
-        qt6.full
         nil
         mdx-language-server
-        python311Packages.grip
         (python3.withPackages (p: (with p; [
             python-lsp-server
             flake8
