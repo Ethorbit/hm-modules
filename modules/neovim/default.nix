@@ -27,10 +27,14 @@ in
             recursive = true;
         };
 
-        # You can override any of these in your own configs:
+        # Recursive above makes it not possible to override any files
+        # however any customizations you make to this custom/init.lua
+        # will run last, thus it can override any value you set inside
         ".config/nvim/lua/custom/init.lua".source = mkDefault ./config_overridable/lua/custom/init.lua;
-        ".config/nvim/lua/custom/setup/init.lua".source = mkDefault ./config_overridable/lua/custom/setup/init.lua;
-        ".config/nvim/lua/custom/setup/codecompanion.lua".source = mkDefault ./config_overridable/lua/custom/setup/codecompanion.lua;
+        # example for overriding clipboard option:
+        # ".config/nvim/lua/custom/init.lua".text = ''
+        #     vim.opt.clipboard = "unnamed"
+        # '';
     };
 
     # home.file.".config/nvim/lua/nix.lua".text = ''

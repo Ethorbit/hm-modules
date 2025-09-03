@@ -46,11 +46,6 @@
             nvim-neoclip-lua
             
             nui-nvim
-
-            # this garbage doesn't support ollama despite saying it does
-            #avante-nvim
-            # this one works :D
-            codecompanion-nvim
         ];
     };
 }

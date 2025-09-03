@@ -1,1 +1,1 @@
-require("custom/setup")
+-- PUT YOUR CUSTOMIZATIONS IN HERE
