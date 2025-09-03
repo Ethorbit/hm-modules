@@ -10,6 +10,8 @@
         [
             confirm-quit
 
+            nvim-osc52
+
             markdown-preview-nvim
 
             transparent-nvim
