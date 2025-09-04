@@ -8,7 +8,7 @@ with pkgs;
         ripgrep
         trash-cli
         nil
-        mdx-language-server
+        unstable.mdx-language-server
         (python3.withPackages (p: (with p; [
             python-lsp-server
             flake8

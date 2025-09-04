@@ -14,12 +14,14 @@ vim.diagnostic.config({
     virtual_text = true,
     virtual_lines = false,
 })
--- also fix the dumbass default folding
--- (if I wanted that, I would've enabled it!!)
+
+-- No default folding pls
 vim.wo = {
     foldenable = false,
     foldmethod = "manual"
 }
+
+vim.g.loaded_lua_ftplugin = 1
 
 ranger_replace_netrw = 1
 
