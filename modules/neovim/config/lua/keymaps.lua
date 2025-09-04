@@ -38,6 +38,9 @@ keymap("n", "<C-t>l", ":tabn<cr>", opts)
 keymap("n", "<C-t>h", ":tabp<cr>", opts)
 keymap("n", "<leader>t", ":tabnew New<cr>", opts)
 
+-- SSH controls
+
+
 -- Buffer controls
 keymap("n", "<leader>be", "%bd | e#<cr>", opts)
 keymap("n", "<leader>ba", ":up | %bd<cr>", opts)

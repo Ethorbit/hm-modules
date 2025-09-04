@@ -8,6 +8,7 @@ let
 in
 {
     imports = [
+        ./presets.nix
         ./plugins.nix
         ./packages.nix
         ./options.nix
