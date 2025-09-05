@@ -1,19 +1,16 @@
 {
     inputs = {
-        # 25.05 totally fucked my neovim beyond repair, staying away from it
-        # * it broke built-in lua support
-        # * it made downgrading the package impossible due to its new garbage standards
-        nixpkgs.url = "github:nixos/nixpkgs/release-24.11";
+        nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
         nixpkgs-old.url = "github:nixos/nixpkgs/release-24.11";
-        nixpkgs-unstable.url = "github:nixos/nixpkgs/release-25.05"; #"github:nixos/nixpkgs/nixos-unstable";
+        nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
-        ethorbitpkgs = {
+        ethorbit-packages = {
             url = "github:ethorbit/nix-packages";
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
         home-manager = {
-            url = "github:nix-community/home-manager/release-24.11"; # ^^
+            url = "github:nix-community/home-manager/release-25.05";
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
@@ -25,7 +22,7 @@
         nixpkgs,
         nixpkgs-old,
         nixpkgs-unstable,
-        ethorbitpkgs,
+        ethorbit-packages,
         home-manager,
         utils
     }: 
@@ -52,7 +49,7 @@
                     });
                 })
 
-                ethorbitpkgs.overlays.default
+                ethorbit-packages.overlays.default
             ];
         };
 
