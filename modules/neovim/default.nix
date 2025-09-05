@@ -39,7 +39,9 @@ in
         # Recursive above makes it not possible to override any files
         # however any customizations you make to this custom/init.lua
         # will run last, thus it can override any value you set inside
-        ".config/nvim/lua/custom/init.lua".source = mkDefault ./config_overridable/lua/custom/init.lua;
+        ".config/nvim/lua/custom/init.lua".text = mkDefault ''
+            -- ADD YOUR CUSTOMISATIONS
+        '';
         # example for overriding clipboard option:
         # ".config/nvim/lua/custom/init.lua".text = ''
         #     vim.opt.clipboard = "unnamed"
