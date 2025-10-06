@@ -9,6 +9,8 @@
 
     dunst = ./dunst;
 
+    espanso = ./espanso;
+
     feh = ./feh;
 
     firefox = ./firefox;

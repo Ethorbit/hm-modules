@@ -1,0 +1,12 @@
+config_version: 1
+
+check_for_updates: false
+
+global:
+  not_in:
+    - "Code"             # VS Code
+    - "PyCharm"
+    - "Sublime Text"
+    - "kitty"            # Kitty terminal
+    - "Alacritty"        # Another terminal
+    - "gnome-terminal"   # Gnome Terminal

@@ -1,0 +1,10 @@
+matches:
+  - trigger: ":emda"
+    replace: "—"
+    only_in:
+      - "Brave-browser"
+      - "Firefox"
+      - "Chromium"
+      - "libreoffice-startcenter"
+      - "libreoffice-writer"
+      - "libreoffice-calc"
