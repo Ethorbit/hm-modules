@@ -1,3 +1,6 @@
+extra_includes:
+  - "./variables.yml"
+
 config_version: 1
 
 check_for_updates: false

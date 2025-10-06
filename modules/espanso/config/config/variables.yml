@@ -1,0 +1,12 @@
+config_version: 1
+
+global_vars:
+  - name: currentdate
+    type: date
+    params:
+      format: "%m/%d/%Y"
+
+  - name: currenttime
+    type: date
+    params:
+      format: "%R"
