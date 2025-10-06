@@ -4,7 +4,7 @@ global_vars:
   - name: currentdate
     type: date
     params:
-      format: "%m/%d/%Y"
+      format: "%Y-%m-%d"
 
   - name: currenttime
     type: date
