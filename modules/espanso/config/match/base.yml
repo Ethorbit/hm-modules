@@ -2,5 +2,5 @@ matches:
   - trigger: ":timenow"
     replace: "{{currentdate}} {{currenttime}}"
 
-  - trigger: ":emda"
+  - trigger: ":m--"
     replace: "—"
