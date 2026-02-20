@@ -6,7 +6,7 @@
         "module/bluetooth/battery" = {
             type = "custom/script";
             exec = "${config.ethorbit.home-manager.polybar.scripts.bluetooth.battery}";
-            exec-if = "${config.ethorbit.home-manager.polybar.scripts.bluetooth.battery} >/dev/null 2>&1";
+            exec-if = "${config.ethorbit.home-manager.polybar.scripts.bluetooth.battery}";
             interval = 60;
             label = "%{F#ffffff}♐ %output%%{F-}";
         };
