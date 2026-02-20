@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
     imports = [
@@ -7,6 +7,12 @@
         ./colors.nix
         ./style.nix
     ];
+
+    # ENVIRONMENT fix
+    systemd.user.services.polybar.Service = {
+        Environment = lib.mkForce "";
+        PassEnvironment = "PATH";
+    };
 
     services.polybar = {
         enable = true;
