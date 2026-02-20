@@ -4,5 +4,6 @@
     imports = [
         ./mocp
         ./scream
+        ./bluetooth
     ];
 }

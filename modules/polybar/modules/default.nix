@@ -12,6 +12,7 @@
         ./lock.nix
         ./powermenu.nix
         ./battery.nix
+        ./bluetooth.nix
         ./filesystem.nix
         ./network.nix
         ./microphone.nix
