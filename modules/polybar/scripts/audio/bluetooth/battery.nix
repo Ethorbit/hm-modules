@@ -11,6 +11,7 @@
             # https://www.reddit.com/r/Polybar/comments/1g1ogux/i_made_a_modulescript_to_show_the_battery_of_my/
             # Thanks for sharing!
             default = (pkgs.writeShellScript "bluetooth_battery.sh" ''
+                bluetoothctl="${pkgs.bluez}/bin/bluetoothctl"
                 [ ! $(command -v bluetoothctl) ] && echo "" && exit
 
                 # Use bluetoothctl to get the list of devices and parse the output
