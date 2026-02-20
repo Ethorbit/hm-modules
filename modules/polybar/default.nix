@@ -114,7 +114,7 @@
                 modules-left = "bspwm i3";
                 # modules-center = mpd
                 # modules-center = memory memory-available cpu amd-cpu-temperature amd-gpu
-                modules-center = "memory memory-available cpu nvidia-gpu mocp/song-name mocp/previous mocp/toggleplay mocp/next";
+                modules-center = "memory memory-available cpu nvidia-gpu bluetooth/battery mocp/song-name mocp/previous mocp/toggleplay mocp/next";
                 modules-right = "date weather";
 
                 #tray-position = "right";

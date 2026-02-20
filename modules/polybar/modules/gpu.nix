@@ -5,7 +5,9 @@
         "module/nvidia-gpu" = {
             type = "custom/script";
             exec = "${config.ethorbit.home-manager.polybar.scripts.nvidia.gpu.outPath}";
-            format = "NVIDIA GPU: <label>";
+            format-prefix = " ";
+            format-prefix-foreground = config.ethorbit.home-manager.polybar.colors.foreground-alt;
+            format = "NVIDIA: <label>";
             format-underline = "#f50a4d";
             interval = 5;
         };
@@ -13,7 +15,8 @@
         "module/amd-gpu" = {
             type = "custom/script";
             exec = "${config.ethorbit.home-manager.polybar.scripts.amd.gpu.outPath}";
-            format-prefix="⬛ ";
+            format-prefix=" ";
+            format-prefix-foreground = config.ethorbit.home-manager.polybar.colors.foreground-alt;
             #format-prefix="▣ ";
             format = "AMD GPU: <label>";
             format-offset = ""; # -4
