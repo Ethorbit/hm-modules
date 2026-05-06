@@ -31,7 +31,6 @@
                     TYPE_DELETE_CURRENT_TOOL = "Del";
                     TYPE_DRAWER = "D";
                     TYPE_EXIT = "Ctrl+Q";
-                    TYPE_IMAGEUPLOADER = "Return";
                     TYPE_MARKER = "M";
                     TYPE_MOVESELECTION = "Ctrl+M";
                     TYPE_MOVE_DOWN = "Down";
@@ -50,7 +49,6 @@
                     TYPE_RESIZE_UP = "Shift+Up";
                     TYPE_SAVE = "Ctrl+S";
                     TYPE_SELECTION = "S";
-                    TYPE_SELECTIONINDICATOR = "";
                     TYPE_SELECT_ALL = "Ctrl+A";
                     TYPE_TEXT = "T";
                     TYPE_TOGGLE_PANEL = "Space";
