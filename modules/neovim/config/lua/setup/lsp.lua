@@ -56,3 +56,4 @@ add("csharp_ls", {
 })
 add("qmlls")
 add("gdscript")
+add("gshader_lsp")
