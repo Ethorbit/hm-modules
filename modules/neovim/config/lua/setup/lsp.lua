@@ -56,5 +56,7 @@ add("csharp_ls", {
 add("qmlls")
 add("gdscript")
 add("gshader_lsp", {
-    cmd = { "gdshader-language-server" }
+    cmd = { "gdshader-language-server" },
+    filetypes = { "gdshader" },
+    root_dir = vim.fs.root(0, { ".godot", ".git" })
 })
