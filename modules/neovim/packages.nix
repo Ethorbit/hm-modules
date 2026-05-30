@@ -14,6 +14,7 @@ with pkgs;
         );
 
         extraPackages = [
+            ethorbit.gshader-lsp
             ranger
             ripgrep
             trash-cli
