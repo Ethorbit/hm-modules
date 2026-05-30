@@ -3,10 +3,9 @@ require("mason-lspconfig").setup()
 require("lint")
 require("formatter").setup()
 
-local lspconfig = require("lspconfig")
-
 local function add(name, config)
-    lspconfig[name].setup(config or {})
+    vim.lsp.config(name, config or {})
+    vim.lsp.enable(name)
 end
 
 -- https://mason-registry.dev/registry/list
