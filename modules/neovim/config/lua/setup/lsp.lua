@@ -41,6 +41,18 @@ add("yamlls")
 add("docker_compose_language_service")
 add("intelephense")
 add("dockerls")
-add("csharp_ls")
+add("csharp_ls", {
+    on_init = function(client)
+        client.notify('workspace/didChangeConfiguration', {
+            settings = {
+                csharp = {
+                    analyzersEnabled = true,
+                    useMetadataUris = true, -- Crucial for navigating Godot internals
+                }
+            }
+        })
+        return true
+    end,
+})
 add("qmlls")
 add("gdscript")

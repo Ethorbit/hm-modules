@@ -28,6 +28,7 @@ with pkgs;
                 pylsp-mypy
                 pyls-isort
             ])))
+            csharp-ls
             nodePackages.eslint
             vscode-langservers-extracted
             nodePackages.typescript-language-server
