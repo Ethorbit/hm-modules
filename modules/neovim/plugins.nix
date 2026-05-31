@@ -32,13 +32,18 @@
             mason-nvim
             mason-lspconfig-nvim
 
+            nvim-dap
+            nvim-dap-ui
+            nvim-treesitter
+            nvim-treesitter-parsers.gdshader
+            godotdev-nvim
+
             # LSP stuff
             nvim-lspconfig
             nvim-lint
             formatter-nvim
 
             vim-qml
-            vim-godot
             vim-svelte
 
             indent-blankline-nvim

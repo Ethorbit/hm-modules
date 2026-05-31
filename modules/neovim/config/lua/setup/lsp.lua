@@ -46,7 +46,7 @@ add("csharp_ls", {
             settings = {
                 csharp = {
                     analyzersEnabled = true,
-                    useMetadataUris = true, -- Crucial for navigating Godot internals
+                    useMetadataUris = true
                 }
             }
         })
@@ -54,9 +54,3 @@ add("csharp_ls", {
     end,
 })
 add("qmlls")
-add("gdscript")
-add("gshader_lsp", {
-    cmd = { "gdshader-language-server" },
-    filetypes = { "gsl", "gdshader" },
-    root_dir = vim.fs.root(0, { ".godot", ".git" })
-})
