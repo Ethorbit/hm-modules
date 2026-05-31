@@ -1,3 +1,5 @@
-require("nvim-treesitter.configs").setup({
-    parser_install_dir = vim.fn.stdpath("data") .. "/treesitter",
-})
+require("nvim-treesitter.configs").setup {
+    highlight = {
+        enable = true,
+    }
+}

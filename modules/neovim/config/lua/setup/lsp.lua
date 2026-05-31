@@ -54,3 +54,7 @@ add("csharp_ls", {
     end,
 })
 add("qmlls")
+add("gdscript")
+add("gdshader_lsp", {
+    cmd = { "gdshader-language-server" }
+})

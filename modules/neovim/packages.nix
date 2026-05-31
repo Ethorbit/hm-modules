@@ -14,6 +14,7 @@ with pkgs;
         );
 
         extraPackages = [
+            ethorbit.gdshader-lsp
             ranger
             ripgrep
             trash-cli
@@ -29,6 +30,8 @@ with pkgs;
                 pyls-isort
             ])))
             csharp-ls
+            dotnet-sdk
+            netcoredbg
             nodePackages.eslint
             vscode-langservers-extracted
             nodePackages.typescript-language-server
@@ -37,6 +40,7 @@ with pkgs;
             yaml-language-server
             docker-compose-language-service
             dockerfile-language-server-nodejs
+            gdscript-formatter
         ];
     };
 }

@@ -34,8 +34,11 @@
 
             nvim-dap
             nvim-dap-ui
-            nvim-treesitter
-            nvim-treesitter-parsers.gdshader
+            (nvim-treesitter.withPlugins (p: with p; [
+                glsl
+                gdshader
+                gdscript
+            ]))
             godotdev-nvim
 
             # LSP stuff
