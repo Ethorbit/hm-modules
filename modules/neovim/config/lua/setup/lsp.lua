@@ -1,5 +1,5 @@
-require("mason").setup()
-require("mason-lspconfig").setup()
+-- require("mason").setup()
+-- require("mason-lspconfig").setup()
 require("lint")
 require("formatter").setup()
 
@@ -54,3 +54,10 @@ add("csharp_ls", {
     end,
 })
 add("qmlls")
+
+add("godot", {
+    name = "godot",
+    cmd = vim.lsp.rpc.connect("127.0.0.1", 6005),
+    root_dir = vim.fn.getcwd(),
+    filetypes = { "gdscript" }
+})

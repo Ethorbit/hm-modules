@@ -4,9 +4,8 @@
     programs.neovim = {
         withNodeJs = true;
         plugins = 
-            with pkgs; 
-            with vimPlugins; 
-            with ethorbit.vimPlugins;
+            with pkgs.vimPlugins; 
+            with pkgs.ethorbit.vimPlugins;
         [
             confirm-quit
 
@@ -29,8 +28,8 @@
             cmp-path
             cmp-cmdline
             nvim-cmp
-            mason-nvim
-            mason-lspconfig-nvim
+            #mason-nvim
+            #mason-lspconfig-nvim
 
             nvim-dap
             nvim-dap-ui
@@ -39,7 +38,7 @@
                 gdshader
                 gdscript
             ]))
-            godotdev-nvim
+            #godotdev-nvim
 
             # LSP stuff
             nvim-lspconfig
@@ -51,8 +50,7 @@
 
             indent-blankline-nvim
 
-            plenary-nvim
-            telescope-nvim
+            fzf-lua
             nvim-neoclip-lua
             
             nui-nvim

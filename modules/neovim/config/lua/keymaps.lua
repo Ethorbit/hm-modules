@@ -66,13 +66,13 @@ keymap("n", "<C-h>-", ":vertical-resize -20<cr>", opts)
 keymap("n", "<leader>f", ":RangerEdit<cr>", opts)
 
 -- Godot Engine
-autocmd("FileType", {
-    pattern = { "gd", "gdscript", "gdscript3" },
-    group = vim.api.nvim_create_augroup("gdscript-keymaps", {}),
-    callback = function()
-        keymap("n", "<F4>", ":GodotRunLast<CR>", opts)
-        keymap("n", "<F5>", ":GodotRun<CR>", opts)
-        keymap("n", "<F6>", ":GodotRunCurrent<CR>", opts)
-        keymap("n", "<F7>", ":GodotRunFZF<CR>", opts)
-    end,
-})
+--autocmd("FileType", {
+--    pattern = { "gd", "gdscript", "gdscript3" },
+--    group = vim.api.nvim_create_augroup("gdscript-keymaps", {}),
+--    callback = function()
+--        keymap("n", "<F4>", ":GodotRunLast<CR>", opts)
+--        keymap("n", "<F5>", ":GodotRun<CR>", opts)
+--        keymap("n", "<F6>", ":GodotRunCurrent<CR>", opts)
+--        keymap("n", "<F7>", ":GodotRunFZF<CR>", opts)
+--    end,
+--})

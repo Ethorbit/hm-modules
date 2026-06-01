@@ -16,7 +16,7 @@ with pkgs;
         extraPackages = [
             #ethorbit.gdshader-lsp
             ranger
-            ripgrep
+            fzf
             trash-cli
             nil
             unstable.mdx-language-server
