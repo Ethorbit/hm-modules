@@ -16,10 +16,8 @@ vim.diagnostic.config({
 })
 
 -- No default folding pls
-vim.wo = {
-    foldenable = false,
-    foldmethod = "manual"
-}
+vim.wo.foldenable = false
+vim.wo.foldmethod = "manual"
 
 vim.g.loaded_lua_ftplugin = 1
 
