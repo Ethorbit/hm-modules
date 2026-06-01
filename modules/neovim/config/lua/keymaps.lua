@@ -65,6 +65,11 @@ keymap("n", "<C-h>-", ":vertical-resize -20<cr>", opts)
 -- File browser
 keymap("n", "<leader>f", ":RangerEdit<cr>", opts)
 
+-- Neoclip
+vim.keymap.set("n", "<leader>y", function() 
+    require("neoclip.fzf")() 
+end, { desc = "Open Clipboard History (FZF)" })
+
 -- Godot Engine
 --autocmd("FileType", {
 --    pattern = { "gd", "gdscript", "gdscript3" },
