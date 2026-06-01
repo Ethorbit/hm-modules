@@ -40,7 +40,7 @@ options.nvim = {
     backspace = "indent,eol,start",
     list = true,
     listchars = {["tab"] = "▷⋮"},
-    shellcmdflag="-ic",
+    shellcmdflag="-c",
     backupdir = os.getenv("HOME") .. "/.config/nvim/cache"
 }
 

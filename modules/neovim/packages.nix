@@ -15,7 +15,8 @@ with pkgs;
 
         extraPackages = [
             ranger
-            fzf
+            fd
+            ripgrep
             trash-cli
             nil
             unstable.mdx-language-server

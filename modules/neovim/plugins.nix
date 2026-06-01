@@ -28,16 +28,11 @@
             cmp-path
             cmp-cmdline
             nvim-cmp
-            #mason-nvim
-            #mason-lspconfig-nvim
 
             nvim-dap
             nvim-dap-ui
-            (nvim-treesitter.withPlugins (p: with p; [
-                glsl
-                gdshader
-                gdscript
-            ]))
+            nvim-treesitter.withAllGrammars
+            godotdev-nvim
 
             # LSP stuff
             nvim-lspconfig
@@ -49,7 +44,8 @@
 
             indent-blankline-nvim
 
-            fzf-lua
+            plenary-nvim
+            telescope-nvim
             nvim-neoclip-lua
             
             nui-nvim

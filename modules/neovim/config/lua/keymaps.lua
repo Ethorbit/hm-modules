@@ -69,15 +69,3 @@ keymap("n", "<leader>f", ":RangerEdit<cr>", opts)
 vim.keymap.set("n", "<leader>y", function() 
     require("neoclip.fzf")() 
 end, { desc = "Open Clipboard History (FZF)" })
-
--- Godot Engine
---autocmd("FileType", {
---    pattern = { "gd", "gdscript", "gdscript3" },
---    group = vim.api.nvim_create_augroup("gdscript-keymaps", {}),
---    callback = function()
---        keymap("n", "<F4>", ":GodotRunLast<CR>", opts)
---        keymap("n", "<F5>", ":GodotRun<CR>", opts)
---        keymap("n", "<F6>", ":GodotRunCurrent<CR>", opts)
---        keymap("n", "<F7>", ":GodotRunFZF<CR>", opts)
---    end,
---})
