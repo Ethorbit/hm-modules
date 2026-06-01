@@ -38,7 +38,6 @@
                 gdshader
                 gdscript
             ]))
-            #godotdev-nvim
 
             # LSP stuff
             nvim-lspconfig

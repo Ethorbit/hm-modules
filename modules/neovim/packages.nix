@@ -14,7 +14,6 @@ with pkgs;
         );
 
         extraPackages = [
-            #ethorbit.gdshader-lsp
             ranger
             fzf
             trash-cli
