@@ -32,7 +32,7 @@ with pkgs;
             csharp-ls
             ethorbit.easydotnet
             dotnet-ef
-            dotnet-sdk_9
+            dotnet-sdk_10
             netcoredbg
             nodePackages.eslint
             vscode-langservers-extracted
