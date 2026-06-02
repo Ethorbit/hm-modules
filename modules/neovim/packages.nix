@@ -30,7 +30,7 @@ with pkgs;
                 pyls-isort
             ])))
             csharp-ls
-            dotnet-sdk
+            dotnet-sdk_9
             netcoredbg
             nodePackages.eslint
             vscode-langservers-extracted
