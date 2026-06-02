@@ -1,4 +1,6 @@
 local cmp = require("cmp")
+require("cmp_nvim_lsp").default_capabilities()
+
 --local tabby = require("cmp_tabby")
 --tabby.setup({
 --    config = {

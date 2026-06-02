@@ -35,7 +35,6 @@ in
                 pylsp-mypy
                 pyls-isort
             ])))
-            #csharp-ls
             wrappedRoslyn
             ethorbit.easydotnet
             dotnet-ef
