@@ -2,6 +2,12 @@
 
 with pkgs;
 
+let
+    roslyn = pkgs.roslyn-ls;
+    wrappedRoslyn = pkgs.writeShellScriptBin "roslyn-language-server" ''
+        exec ${roslyn}/bin/Microsoft.CodeAnalysis.LanguageServer "$@"
+    '';
+in
 {
     programs.neovim = {
         # NixOS 25.05's neovim v0.11.3 broke built-in lua support
@@ -29,7 +35,8 @@ with pkgs;
                 pylsp-mypy
                 pyls-isort
             ])))
-            csharp-ls
+            #csharp-ls
+            wrappedRoslyn
             ethorbit.easydotnet
             dotnet-ef
             dotnet-sdk_10

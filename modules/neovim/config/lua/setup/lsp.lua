@@ -53,4 +53,7 @@ add("dockerls")
 --        return true
 --    end,
 --})
+add("easy_dotnet", {
+    cmd = { "csharp-ls" }
+});
 add("qmlls")
