@@ -8,6 +8,7 @@ require("setup/treesitter")
 require("setup/cmp")
 require("setup/dap")
 require("setup/lsp")
+require("setup/easydotnet")
 require("setup/godotdev")
 
 require("lualine").setup()

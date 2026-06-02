@@ -29,6 +29,8 @@
             cmp-cmdline
             nvim-cmp
 
+            easy-dotnet-nvim
+
             nvim-dap
             nvim-dap-ui
             nvim-treesitter.withAllGrammars
