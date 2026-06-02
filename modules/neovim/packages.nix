@@ -30,6 +30,8 @@ with pkgs;
                 pyls-isort
             ])))
             csharp-ls
+            ethorbit.easydotnet
+            dotnet-ef
             dotnet-sdk_9
             netcoredbg
             nodePackages.eslint

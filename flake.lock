@@ -9,11 +9,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1780194792,
-        "narHash": "sha256-H311VGslnheo6PqFKPp7Mfzjsue6uHU2VprMc+s+gro=",
+        "lastModified": 1780380061,
+        "narHash": "sha256-7XUimDNFBCeJVHJnxzcFIu7JsrwCSbmLNrWUuWuax7E=",
         "owner": "ethorbit",
         "repo": "nix-packages",
-        "rev": "73cb838389d79b1f73222020ea5f73b88ffdf6ff",
+        "rev": "679d3a1a92ae19fc0fd76482c3b5f106a8c07a0d",
         "type": "github"
       },
       "original": {

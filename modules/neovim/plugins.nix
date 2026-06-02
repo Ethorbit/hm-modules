@@ -29,7 +29,7 @@
             cmp-cmdline
             nvim-cmp
 
-            easy-dotnet-nvim
+            pkgs.unstable.vimPlugins.easy-dotnet-nvim
 
             nvim-dap
             nvim-dap-ui
