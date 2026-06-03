@@ -1,3 +1,1 @@
-require("header").setup({
-    license_from_file = true
-})
+require("header").setup()
