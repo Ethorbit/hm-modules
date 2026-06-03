@@ -15,40 +15,45 @@ vim.diagnostic.config({
     virtual_lines = false,
 })
 
--- No default folding pls
-vim.wo.foldenable = false
-vim.wo.foldmethod = "manual"
-
 vim.g.loaded_lua_ftplugin = 1
 
 ranger_replace_netrw = 1
 
-options.nvim = {
-    autochdir = true,
-    confirm = true,
-    clipboard = "unnamedplus",
-    mouse = "",
-    number = true,
-    autoindent = true,
-    smartindent = false,
-    cindent = false,
-    expandtab = true,
-    softtabstop = 0, 
-    foldmethod = "expr",
-    shiftwidth = 0,
-    tabstop = 4,
-    backspace = "indent,eol,start",
-    list = true,
-    listchars = {["tab"] = "▷⋮"},
-    shellcmdflag="-c",
-    backupdir = os.getenv("HOME") .. "/.config/nvim/cache"
+options = {
+    opt = {
+        autochdir = true,
+        confirm = true,
+        clipboard = "unnamedplus",
+        mouse = "",
+        number = true,
+        autoindent = true,
+        smartindent = false,
+        cindent = false,
+        expandtab = true,
+        softtabstop = 0,
+        shiftwidth = 0,
+        tabstop = 4,
+        foldlevelstart = 99,
+        backspace = "indent,eol,start",
+        list = true,
+        listchars = {["tab"] = "▷⋮"},
+        shellcmdflag="-c",
+        backupdir = os.getenv("HOME") .. "/.config/nvim/cache"
+    },
+    wo = {
+        foldenable = true,
+        foldmethod = "expr",
+        foldexpr = "v:lua.vim.lsp.foldexpr()",
+        foldlevel = 99,
+        foldcolumn = "1",
+    }
 }
 
 local cpopts = get_option_val("cpoptions", {})
 set_option_val("cpoptions", cpopts .. "I", {})
 
-for _,tbl in pairs(options) do 
-    for k,v in pairs(tbl) do 
-        vim.opt[k] = v
+for scope,tbl in pairs(options) do
+    for k,v in pairs(tbl) do
+        vim[scope][k] = v
     end
-end 
+end
