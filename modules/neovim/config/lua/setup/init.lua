@@ -1,5 +1,6 @@
 require("setup/transparent")
 require("setup/comment")
+require("setup/header")
 require("setup/osc52")
 require("setup/neoclip")
 require("setup/indent_blankline")

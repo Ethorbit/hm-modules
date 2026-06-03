@@ -22,6 +22,8 @@
             bclose-vim
             comment-nvim
 
+            header-nvim
+
             luasnip
             cmp-nvim-lsp
             cmp-buffer
