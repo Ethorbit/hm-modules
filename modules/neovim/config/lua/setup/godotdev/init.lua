@@ -1,3 +1,8 @@
+local function additions()
+    require("setup/godotdev/additions/hotfix")
+    require("setup/godotdev/additions/hotload")
+end
+
 require("godotdev").setup({
     editor_host = "127.0.0.1", -- Godot editor host
     editor_port = 6005,        -- Godot LSP port
@@ -76,7 +81,4 @@ require("godotdev").setup({
     },
 })
 
--- godotdev fix since it thinks it needs to enable the gdscript LSP for gdshader files
-vim.lsp.config["gdscript"] = vim.tbl_extend("force", vim.lsp.get_config and vim.lsp.get_config("gdscript") or {}, {
-    filetypes = { "gd", "gdscript", "gdscript3" }
-})
+additions()
