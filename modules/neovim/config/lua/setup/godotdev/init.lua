@@ -1,6 +1,5 @@
 local function additions()
     require("setup/godotdev/additions/hotfix")
-    require("setup/godotdev/additions/hotload")
 end
 
 require("godotdev").setup({
