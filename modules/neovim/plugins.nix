@@ -42,6 +42,7 @@
             nvim-lspconfig
             nvim-lint
             formatter-nvim
+            lsp_signature-nvim
 
             vim-qml
             vim-svelte
