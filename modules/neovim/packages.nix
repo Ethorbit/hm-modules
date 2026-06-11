@@ -7,6 +7,7 @@ let
     wrappedRoslyn = pkgs.writeShellScriptBin "roslyn-language-server" ''
         exec ${roslyn}/bin/Microsoft.CodeAnalysis.LanguageServer "$@"
     '';
+    hasNodePackages = pkgs ? nodePackages;
 in
 {
     programs.neovim = {
@@ -40,20 +41,25 @@ in
             dotnet-ef
             dotnet-sdk_10
             netcoredbg
-            (
-                if pkgs ? nodePackages then
-                    pkgs.nodePackages.eslint
-                else
-                    pkgs.eslint
-            )
             vscode-langservers-extracted
-            nodePackages.typescript-language-server
-            nodePackages.svelte-language-server
             lua-language-server
             yaml-language-server
             docker-compose-language-service
             dockerfile-language-server-nodejs
             gdscript-formatter
-        ];
+        ] ++ (
+            if hasNodePackages then
+                [
+                    nodePackages.eslint
+                    nodePackages.typescript-language-server
+                    nodePackages.svelte-language-server
+                ]
+            else
+                [
+                    eslint
+                    typescript-language-server
+                    svelte-language-server
+                ]
+        );
     };
 }
