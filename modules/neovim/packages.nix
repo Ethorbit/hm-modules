@@ -40,7 +40,12 @@ in
             dotnet-ef
             dotnet-sdk_10
             netcoredbg
-            nodePackages.eslint
+            (
+                if pkgs ? nodePackages then
+                    pkgs.nodePackages.eslint
+                else
+                    pkgs.eslint
+            )
             vscode-langservers-extracted
             nodePackages.typescript-language-server
             nodePackages.svelte-language-server
