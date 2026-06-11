@@ -7,7 +7,7 @@ let
     wrappedRoslyn = pkgs.writeShellScriptBin "roslyn-language-server" ''
         exec ${roslyn}/bin/Microsoft.CodeAnalysis.LanguageServer "$@"
     '';
-    hasNodePackages = pkgs ? nodePackages;
+    hasNodePackages = (builtins.tryEval (builtins.hasAttr "nodePackages" pkgs && pkgs.nodePackages != null)).value;
 in
 {
     programs.neovim = {
