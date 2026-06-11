@@ -11,15 +11,6 @@ let
 in
 {
     programs.neovim = {
-        # NixOS 25.05's neovim v0.11.3 broke built-in lua support
-        # I'm downgrading for the time being
-        package = lib.mkForce (
-            pkgs.old.neovim-unwrapped.overrideAttrs (old: {
-                meta = old.meta // { teams = []; };
-                buildInputs = (old.buildInputs or []) ++ [ ranger ];
-            })
-        );
-
         extraPackages = [
             ranger
             fd
