@@ -1,7 +1,7 @@
 {
     inputs = {
-        nixpkgs.url = "github:nixos/nixpkgs/release-25.11";
-        nixpkgs-old.url = "github:nixos/nixpkgs/release-25.05";
+        nixpkgs.url = "github:nixos/nixpkgs/release-26.05";
+        nixpkgs-old.url = "github:nixos/nixpkgs/release-25.11";
         nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
         ethorbit-packages = {
@@ -10,7 +10,7 @@
         };
 
         home-manager = {
-            url = "github:nix-community/home-manager/release-25.11";
+            url = "github:nix-community/home-manager/release-26.05";
             inputs.nixpkgs.follows = "nixpkgs";
         };
 
@@ -30,7 +30,7 @@
     let
         pkgs = import nixpkgs {
             inherit system;
-            allowUnfree = true;
+            config.allowUnfree = true;
             overlays = [
                 (self: super: {
                     stable = (import nixpkgs {
